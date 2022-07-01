@@ -99,7 +99,7 @@ while (rollDice)
 static int rollDie(int x)
 {
     Random rnd = new Random();
-    x = rnd.Next(1, x);
+    x = rnd.Next(1, x + 1);
     return x;
 }
 
