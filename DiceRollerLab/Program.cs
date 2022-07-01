@@ -13,6 +13,7 @@ while (setupDice)
         Console.WriteLine("How many sides should each die have?");
         dieSides = int.Parse(Console.ReadLine());
 
+
         if (dieSides <= 0)
         {
             throw new Exception("Please enter a poisitve number. You can't have a negative sided die.");
@@ -117,6 +118,10 @@ static string userDice(int x, int y)
     if (x == y)
     {
         return "Mathcing Baby";
+    }
+    if (x + y == 69)
+    {
+        return "nice";
     }
     else
     {
